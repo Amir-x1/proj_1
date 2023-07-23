@@ -244,9 +244,6 @@
                             <div class="col-6 text-end">
                                 <img class="img-fluid rounded w-50 wow zoomIn" data-wow-delay="0.5s" src="{% static 'img/about-3.jpg' %}">
                             </div>
-                            <div class="col-6 text-start">
-                                <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.7s" src="{% static 'img/about-4.jpg' %}">
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -267,7 +264,7 @@
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="room-item shadow rounded overflow-hidden">
                             <div class="position-relative">
-                                <img class="img-fluid" src="{{imagesFolder}}/{{room.img}}" alt="">
+                                <img src="{{room.img.url}}" alt="" height="300" >
                                 <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">{{room.price}}/Night</small>
                             </div>
                             <div class="p-4 mt-2">
